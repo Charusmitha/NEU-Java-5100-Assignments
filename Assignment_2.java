@@ -92,20 +92,7 @@
 	public double getSalary() {
 		return salary;
 	}
-	public void setSSTax(double SSTax) {
-		this.SSTax = SSTax;
-	}
 	
-	public double getSSTax() {
-		return SSTax;
-	}
-	public void setInsuranceCont(double insuranceCont) {
-		this.insuranceCont = insuranceCont;
-	}
-	
-	public double getInsuranceCont() {
-		return insuranceCont;
-	}
 	public void setAge(int age) {
 		this.age = age;
 	}
