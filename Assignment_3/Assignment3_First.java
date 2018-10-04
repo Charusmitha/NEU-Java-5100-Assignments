@@ -14,7 +14,7 @@ public class Test {
 		
 		System.out.println("Student " +charu.getName()+ " with ID " +charu.getID()+ " wants to register to " +Course1Name+ " course\n");
 		System.out.println("List of Students currently registered to " +Course1Name+ " course");
-		//Adding 10 students to javaStudents array of type Student 
+		//Adding 10 students to javaStudents array of type Student to check the scenario where the seats are full and registration is not allowed
 		java.javaStudents[0] = new Student("Divya", 800);
 	    java.javaStudents[1] = new Student("Gavin", 900);
 	    java.javaStudents[2] = new Student("Amanda", 909);
