@@ -1,5 +1,5 @@
 package registration;
-
+//score 5/5
 public class Test {
 	public static void main(String[] args) {
 		//charu and lee are objects of class Student
