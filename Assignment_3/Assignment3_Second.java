@@ -1,3 +1,5 @@
+
+// socre 5/5
 package mood;
 
 import mood.Moody.Happy;
