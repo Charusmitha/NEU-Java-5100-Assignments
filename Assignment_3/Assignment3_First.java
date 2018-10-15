@@ -99,7 +99,7 @@ public class Student {
 import java.util.Arrays;
 
 public class Course {
-	 String courseName;
+	 String courseName; //use private 
 	 int numOfStudents;
 	 Student[] javaStudents = new Student[10];
 	 Student[] dbStudents = new Student[10];
