@@ -7,10 +7,11 @@ public class Spiral {
 
 	public static void main(String[] args) {
 		int[][] matrix = {
-				         {1,2,3,4},
-				         {5,6,7,8},
-				         {9,10,11,12},
-				         {13,14,15,16}
+				 {1,2,3,4,5,6},
+				  {7,8,9,10,11,12},
+				  {13,14,15,16,17,18},
+				  {19,20,21,22,23,24},
+				  {25,26,27,28,29,30}
 		                 };
 		System.out.println("Input Matrix: ");
 		printMatrix(matrix);
@@ -21,10 +22,11 @@ public class Spiral {
 	
 	public static List<Integer> spiralOrder(int[][] matrix){
 		List<Integer> list = new ArrayList<Integer>();
+		if(matrix == null || matrix.length == 0)  return list;
 		int i=0;
 		int matrixColumnLength = matrix[0].length;
 		int matrixRowLength = matrix.length;
-	    int rowLength = matrixRowLength - 1;
+	        int rowLength = matrixRowLength - 1;
 		int columnLength = matrixColumnLength-1;
 		int rFirst=0;
 		int cFirst=0;
@@ -49,6 +51,7 @@ public class Spiral {
 			return list;
 		}
 		while(rFirst<=rLast && cFirst<=cLast) {
+			
 		for(i=cFirst; i< matrixColumnLength; i++)
 		{
 			list.add(matrix[rFirst][i]);
@@ -58,8 +61,9 @@ public class Spiral {
 		{	
 			list.add(matrix[i][cLast]);
 		}
-		if(((columnLength > 1) && (rowLength > 1)) || isFirstIteration)
-		{
+		
+		if(((columnLength > 1) && (rowLength > 1) && (rFirst != rLast) && (cFirst != cLast) || isFirstIteration))
+		{	
 		for(i=columnLength-1; i>=cFirst; i--)
 		{
 			list.add(matrix[rLast][i]);
@@ -70,8 +74,7 @@ public class Spiral {
 			list.add(matrix[i][cFirst]);
 		}
 		isFirstIteration = false;
-		}
-		
+		}		
 		rFirst++;
 		cFirst++;
 		rLast--;
