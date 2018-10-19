@@ -4,9 +4,9 @@ public class TestCheckout {
 
 	public static void main(String[] args) {
 		
-		Checkout checkout = new Checkout();
+	Checkout checkout = new Checkout();
 		
-		checkout.enterItem(new Sundae("Vanilla Ice Cream", 105, "Caramel", 50));
+        checkout.enterItem(new Sundae("Vanilla Ice Cream", 105, "Caramel", 50));
         checkout.enterItem(new IceCream("Vanilla Ice Cream", 105));
         checkout.enterItem(new Candy("Gummy Worms", 1.33, 89));
         checkout.enterItem(new Cookie("Chocolate Chip Cookies", 4, 399));
